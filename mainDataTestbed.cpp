@@ -37,8 +37,8 @@ int main(int argc, char *argv[]) {
     dataGen(new DataSourceMD5(seed, 16), "MD5_r16.bin");
     dataGen(new DataSourceMD5(seed, 17), "MD5_r17.bin");
 
-    dataGen(new DataSourceSHA3(seed, SHA3_SHA256, 3), "SHA256_r3.bin");
-    dataGen(new DataSourceSHA3(seed, SHA3_SHA256, 4), "SHA256_r4.bin");
+    dataGen(new DataSourceSHA3(seed, SHA3_SHA256, 3, 32), "SHA256_r3.bin");
+    dataGen(new DataSourceSHA3(seed, SHA3_SHA256, 4, 32), "SHA256_r4.bin");
 
     dataGen(new DataSourceRC4(seed), "RC4.bin");
     dataGen(new DataSourceRC4Column(seed), "RC4_Col.bin");
